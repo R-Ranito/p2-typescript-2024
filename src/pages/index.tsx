@@ -67,7 +67,7 @@ export const Home = () => {
       {loading && <h2>Loading...</h2>}
       {errorMsg && <h2>{errorMsg}</h2>}
       <div className="max-w-[1300px] h-80 flex justify-center items-center gap-4 flex-wrap border-[6px] px-6 py-6 mt-7 overflow-y-auto scroll-smooth scrollbar-thin scrollbar-thumb-[#414baa] scrollbar-thumb-rounded-full">
-      {pokemonFiltered?.map((result) => (
+        {pokemonFiltered?.map((result) => (
           <PokemonCard key={result.name} data={result} />
         ))}
       </div>

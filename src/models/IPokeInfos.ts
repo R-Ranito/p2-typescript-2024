@@ -1,20 +1,11 @@
-export interface IPokemons {
-  count: number;
-  next: string;
-  previous: string;
-  results: Results[];
-}
-
-interface Results {
-  name: string;
-  url: string;
-}
-
-export interface PokemonDetails {
+export interface IPokeInfo {
   id: number;
   name: string;
   base_experience: number;
   sprites: Other;
+  abilities?: Habi[];
+  types?: Type[];
+  weight: number;
 }
 
 interface Other {
@@ -25,7 +16,14 @@ interface Other {
   };
 }
 
-export interface IState {
-  loading: boolean;
-  errorMsg: string;
+interface Habi {
+  ability: {
+    name: string;
+  };
+}
+
+interface Type {
+  type: {
+    name: string;
+  };
 }
