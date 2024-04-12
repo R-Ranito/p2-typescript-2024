@@ -28,7 +28,7 @@ export const Favorites = () => {
       <section className="flex justify-center items-center gap-5 mx-auto my-0 max-w-[400px] sm:max-w-[450px]">
         {favorites.length > 1 ? (
           <>
-            <button className="md:flex hidden cursor-pointer">
+            <button className="md:flex hidden cursor-pointer hover:transition-all hover:ease-in hover:text-blue-400">
               <ArrowLeft size={32} onClick={previusSlide} />
             </button>
           </>
@@ -42,7 +42,7 @@ export const Favorites = () => {
               {favorites.map((fav) => (
                 <div key={fav.id} className="w-full flex flex-col items-center">
                   <img
-                    src={fav.sprites.other.home.front_default}
+                    src={fav.sprites?.other.home.front_default}
                     className="max-w-[280px] sm:max-w-[400px]"
                   />
                   <h2 className="text-3xl sm:text-4xl mt-2 capitalize">
@@ -63,7 +63,7 @@ export const Favorites = () => {
         {favorites.length > 1 ? (
           <>
             <button
-              className="md:flex hidden cursor-pointer"
+              className="md:flex hidden cursor-pointer hover:transition-all hover:ease-in hover:text-blue-400"
               onClick={nextSlide}
             >
               <ArrowLeft size={32} className="rotate-180" />
