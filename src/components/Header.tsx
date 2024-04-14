@@ -10,7 +10,7 @@ export const Header = () => {
           className="text-blue-400 cursor-pointer hover:text-blue-500 hover:transition-all hover:ease-in"
         />
       </Link>
-      <a href="https://github.com/R-Ranito" target="_blank">
+      <a href="https://github.com/R-Ranito/p2-typescript-2024" target="_blank">
         <GithubLogo
           size={22}
           className="text-slate-100 hover:opacity-80 hover:transition-all hover:ease-in"
